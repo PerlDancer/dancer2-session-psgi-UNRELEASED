@@ -174,7 +174,7 @@ for my $c (@configs) {
         server => sub {
             my $port = shift;
 
-            use Dancer 1.999;
+            use Dancer2;
 
             get '/no_session_data' => sub {
                 return "session not modified";
@@ -217,7 +217,7 @@ for my $c (@configs) {
                 port         => $port
             );
 
-            Dancer->runner->server->port($port);
+            Dancer2->runner->server->port($port);
             start;
         },
     );

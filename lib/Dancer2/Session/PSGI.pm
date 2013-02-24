@@ -2,13 +2,13 @@ use 5.008001;
 use strict;
 use warnings;
 
-package Dancer::SessionFactory::PSGI;
+package Dancer2::Session::PSGI;
 # ABSTRACT: Dancer 2 session storage with Plack middleware
 # VERSION
 
 use Moo;
 
-with 'Dancer::Core::Role::SessionFactory';
+with 'Dancer2::Core::Role::SessionFactory';
 
 #--------------------------------------------------------------------------#
 # Required methods
